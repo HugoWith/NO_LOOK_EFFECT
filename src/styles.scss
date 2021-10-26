@@ -1,0 +1,62 @@
+@import 'scss/reset';
+@import 'scss/base';
+
+
+h1{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 30vh;
+  left: 15%;
+  font-size: 7rem;
+  font-weight: bold;
+  z-index: 11;
+
+  .yellow__text{
+    color: #f5f100;
+    mix-blend-mode: difference;
+  }
+}
+
+.skate__wrapper{
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  z-index: 10;
+  transition: transform ease;
+ 
+}
+
+.skate{
+  width: 30rem;
+  opacity: 1;
+  object-fit: contain;
+  z-index: 10;
+  transition: transform  ease;
+ 
+}
+
+.bg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #f5f100;
+  z-index: 1;
+  transition: transform ease;
+}
+
+.disclaimer{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-family: "helvetica";
+  font-size: 0.6rem;
+  
+  a {
+    color: #f57600;
+  }
+}
